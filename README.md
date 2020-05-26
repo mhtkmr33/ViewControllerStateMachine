@@ -40,8 +40,8 @@ struct StateProvider: StateBehaviourProvider {
 
 2. Inside your view controller just initialise you stateProvider i.e. 
 
-lazy var stateBehaviourProvider: StateBehaviourProvider = {
+    lazy var stateBehaviourProvider: StateBehaviourProvider = {
         return StateProvider(containerToPresentAllViews: self.stackView)
-    }()
+     }()
     
 3. Simple change the state with a inline query i.e. stateBehaviourProvider.changeStateTo(state: .noContent)
